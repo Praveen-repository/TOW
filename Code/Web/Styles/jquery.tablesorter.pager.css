@@ -1,0 +1,50 @@
+div.tablesorterPager {
+	padding: 0px 0 10px 0;
+	background-color: #D6D2C2;
+	text-align: center;
+	width:100%;
+	text-align:center;
+	border: 1px solid red;
+}
+div.tablesorterPager span {
+	padding: 0 5px 0 5px;
+}
+div.tablesorterPager input.prev {
+	width: auto;
+	margin-right: 10px;
+}
+div.tablesorterPager input.next {
+	width: auto;
+	margin-left: 10px;
+}
+div.tablesorterPager input {
+	font-size: 12px;
+	width: 50px;
+	border: 1px solid #330000;
+	text-align: center;
+}
+
+.pagedisplay {
+	font-size: 12px;
+	width: 60%;
+	border: 1px solid #330000;
+    margin-right: 10px;
+	text-align: center;
+}
+
+.pagesize
+{ 
+ float:right;
+  width:70px;
+}
+  
+.pager
+{
+ 
+}
+
+.pager img
+{
+ vertical-align:top;
+ padding-right: 10px;
+}

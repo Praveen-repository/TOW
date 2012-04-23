@@ -1,0 +1,18 @@
+﻿body {text-align:center;font-family:Helvetica Neue Helvetica Arial sans-serif;margin:0;background: #282828;}
+.cnt{width:850px; height:650px; margin:0 auto; background: #8FD4FF;}
+.contBody{background: #8FD4FF;min-height:650px;height:auto!important;height:650px;}
+.adminBann{text-align:left; height:55px; margin:0 auto; display:block; color: #1C4C5C; font-size:34px; font-weight:bold; padding:10px 0 0 26px; top:0px;}
+.adminBann a{font-size:14px;float:right; padding: 19px 0 0 0; margin: 0 10px 0 0; font-weight:normal; color:#1C4C5C;}
+.page{display:block; margin:0 auto; padding:0 auto;}
+.action{ width:750px; border: 0px solid #cccccc; padding:5px 5px 5px 10px; margin:0 auto; font-family: arial; text-align:left; }
+.action .btn{background-color:#ff0000; border: 1px solid #ff0000;font-family: arial; font-weight:bold; font-size:12px; padding: 5px; color:#ffffff;}
+.ctrFrmHeading{font-family: arial; font-weight:lighter; font-size:18px;  width:550px; padding:5px 5px 5px 10px; margin:0 auto;color:#000000; display:block; text-align:left;background:#cccccc;}
+h1 { width:750px; border: 0px solid #cccccc; padding:5px 5px 5px 10px; margin:0 auto; font-family: arial; font-size:24px; text-align:left; }
+.menu{width:840px; background-color:#1C4C5C; height:48px; display:block; padding:5px; margin:0 auto;}
+.menu ul {float:left; overflow:hidden; margin: 10px 0 7px 0; padding:0;}
+.menu ul li {display:inline; color:#ffffff; font-size: 24px; margin-left: 10px;}
+.menu ul li a{color:#ffffff; font-size: 24px; margin-left: 10px; text-decoration:none;}
+.footer {width:850px; margin:0 auto; background: #8FD4FF; border-top: 2px solid #1c4c5c; height:60px}
+.footer ul{overflow:hidden; margin: o auto; padding:0;}
+.footer ul li {display:inline; margin-left: 10px;}
+.footer ul li a{color:#1c4c5c; font-size: 14px; margin-left: 10px; text-decoration:none;}

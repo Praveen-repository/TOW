@@ -1,0 +1,8 @@
+
+/* tab pane styling */
+.panes div {
+    display:none;
+    border:1px solid #0C3C74;
+    border-top:0;
+    padding: 5px;
+}

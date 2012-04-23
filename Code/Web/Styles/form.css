@@ -1,0 +1,50 @@
+﻿.frm{ width:750px; border: 0px solid #cccccc; padding:5px 5px 5px 10px; margin:0 auto; font-family: arial; text-align:center; }
+.frm .row{width:100%; text-align:left; padding:4px 0 4px 0;  font-family: arial; font-size:12px;}
+.frm .row img{vertical-align:bottom;}
+
+.frm .row .lbl{width:150px; text-align:left;display:inline-block; font-size:12px; vertical-align:top;}
+.frm .row .lblb{width:150px; text-align:left;display:inline-block; font-size:12px; font-weight:bold; vertical-align:top;}
+.frm .row input[type=text]{width:180px; border: 1px solid #cccccc; font-family: arial; font-size:12px;}
+.frm .row input[type=file]{width:180px; border: 1px solid #cccccc; font-family: arial; font-size:12px;}
+.frm .row input[type=password]{width:180px; border: 1px solid #cccccc;font-family: arial; font-size:12px;}
+.frm .row input[type=Submit]{border: 1px solid #cccccc;font-family: arial; font-size:12px; }
+.frm .row select{width:80px; border: 1px solid #cccccc;font-family: arial; font-size:12px;}
+.frm .row textarea{width:300px; border: 1px solid #cccccc;font-family: arial; font-size:12px; padding: 5px;}
+
+.frm .row .val{padding-left:4px; color:#ff0000;}
+
+.frm .msg{font-family: arial; font-size:14px; padding: 5px;color:#ff0000; display:block;}
+
+.frm .row div{display:inline;}
+
+.frm .row .grid{display:block;margin-top:20px;}
+.frm .row .grid table{width:100%; border-collapse:collapse;}
+.frm .row .grid td{padding:4px;font-family: arial;font-size:12px; border:1px solid #1C4C5C; color:#000000;}
+.frm .row .grid .altrtd{background-color:#BBE6FF}
+.frm .row .grid .altrtd td{color:#000000;}
+.frm .row .grid .act{width:80px;}
+.frm .row .grid th{padding:4px;font-family: arial;font-size:13px; font-weight:bold; border:1px solid #1C4C5C; background-color:#ff0000; color:#ffffff;}
+.frm .row .grid th a{color:#ffffff; margin:0 auto;}
+.frm .row .grid .txt85{width:85px;}
+.frm .row .grid .txt70{width:70px;}
+.frm .row .txt85 {width:85px !important; }
+.frm .row .grid .actSmall{width:40px;}
+.frm .row .grid .actGrd{text-align:center;}
+.frm .row .grid .altrtd .actGrd{text-align:center;}
+
+.frm .row .grid .actGrd a{color:#000000;font-size:13px;}
+.frm .row .grid .altrtd .actGrd a{color:#000000;font-size:13px;}
+
+.frm .row .grid table .pger table{ width:auto; }
+.frm .row .grid table .pger table td{border:0;}
+.frm .row .grid table .pger table td{ font-size:13px;}
+.frm .row .grid table .pger table td a{ font-size:12px;} 
+.frm .row .stable{width: 250px;}
+.width350{width: 350px;}
+
+.frm .row div .Pager{margin: 5px 2px 5px 2px; }
+.frm .row div .Pager .trec{ margin-left:20px;}
+
+.hide{display:none;}
+
+#screenshot{position: absolute;border: 1px solid #ccc;background: #333;padding: 5px;display: none;color: #fff;}

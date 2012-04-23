@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1CF85A9-21BE-421C-B5E7-50105B12F1AC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FreeTextBox">
+      <HintPath>..\..\..\..\Code_backup\Website\Web\Web\bin\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Admin\AddUpdateEvent.aspx" />
+    <Content Include="Admin\AddUpdateGallery.aspx" />
+    <Content Include="Admin\AddUpdateHistory.aspx" />
+    <Content Include="Admin\AddUpdateNews.aspx" />
+    <Content Include="Admin\AddUpdatePages.aspx" />
+    <Content Include="Admin\AddUpdateRecognition.aspx" />
+    <Content Include="Admin\AddUpdateResources.aspx" />
+    <Content Include="Admin\Controls\UCAddUpdateEvent.ascx" />
+    <Content Include="Admin\Controls\UCAddUpdateGallery.ascx" />
+    <Content Include="Admin\Controls\UCAddUpdateHistory.ascx" />
+    <Content Include="Admin\Controls\UCAddUpdateNews.ascx" />
+    <Content Include="Admin\Controls\UCAddUpdatePage.ascx" />
+    <Content Include="Admin\Controls\UCAddUpdateRecognition.ascx" />
+    <Content Include="Admin\Controls\UCAddUpdateResource.ascx" />
+    <Content Include="Admin\Controls\UCDashboard.ascx" />
+    <Content Include="Admin\Controls\UCManageEvents.ascx" />
+    <Content Include="Admin\Controls\UCManageGalleries.ascx" />
+    <Content Include="Admin\Controls\UCManageHistories.ascx" />
+    <Content Include="Admin\Controls\UCManageNews.ascx" />
+    <Content Include="Admin\Controls\UCManagePages.ascx" />
+    <Content Include="Admin\Controls\UCManageRecognitions.ascx" />
+    <Content Include="Admin\Controls\UCManageResources.ascx" />
+    <Content Include="Admin\Controls\UCManageTextPage.ascx" />
+    <Content Include="Admin\Controls\UCSelectResources.ascx" />
+    <Content Include="Admin\Controls\UCShowResources.ascx" />
+    <Content Include="Admin\Controls\UCViewEvent.ascx" />
+    <Content Include="Admin\Controls\UCViewGallery.ascx" />
+    <Content Include="Admin\Controls\UCViewHistory.ascx" />
+    <Content Include="Admin\Controls\UCViewNews.ascx" />
+    <Content Include="Admin\Controls\UCViewPage.ascx" />
+    <Content Include="Admin\Controls\UCViewRecognition.ascx" />
+    <Content Include="Admin\Controls\UCViewResource.ascx" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\ManageEvents.aspx" />
+    <Content Include="Admin\ManageGalleries.aspx" />
+    <Content Include="Admin\ManageHistories.aspx" />
+    <Content Include="Admin\ManageNews.aspx" />
+    <Content Include="Admin\ManagePages.aspx" />
+    <Content Include="Admin\ManageRecognition.aspx" />
+    <Content Include="Admin\ManageResources.aspx" />
+    <Content Include="Admin\ShowMessage.aspx" />
+    <Content Include="Admin\ViewEvent.aspx" />
+    <Content Include="Admin\ViewGallery.aspx" />
+    <Content Include="Admin\ViewHistory.aspx" />
+    <Content Include="Admin\ViewNews.aspx" />
+    <Content Include="Admin\ViewPages.aspx" />
+    <Content Include="Admin\ViewRecognition.aspx" />
+    <Content Include="Admin\ViewResource.aspx" />
+    <Content Include="BaseDesign.htm" />
+    <Content Include="Controls\UCEventList.ascx" />
+    <Content Include="Controls\UCGalleries.ascx" />
+    <Content Include="Controls\UCHistory.ascx" />
+    <Content Include="Controls\UCHomeBanner.ascx" />
+    <Content Include="Controls\HomeContent.ascx" />
+    <Content Include="Controls\UCNewsTicker.ascx" />
+    <Content Include="Controls\UCRecognitions.ascx" />
+    <Content Include="Controls\UCRulesTicker.ascx" />
+    <Content Include="Controls\ShowPage.ascx" />
+    <Content Include="Controls\UCLogin.ascx" />
+    <Content Include="Controls\UCManageResources.ascx" />
+    <Content Include="Controls\UCMessage.ascx" />
+    <Content Include="Controls\UCShowList.ascx" />
+    <Content Include="Controls\UCCustomPaging.ascx" />
+    <Content Include="Events.aspx" />
+    <Content Include="Galleries.aspx" />
+    <Content Include="gallery.aspx" />
+    <Content Include="Histories.aspx" />
+    <Content Include="HomeSlide\01.jpg" />
+    <Content Include="HomeSlide\02.jpg" />
+    <Content Include="HomeSlide\03.jpg" />
+    <Content Include="HomeSlide\04.jpg" />
+    <Content Include="HomeSlide\05.jpg" />
+    <Content Include="HomeSlide\06.jpg" />
+    <Content Include="HomeSlide\07.jpg" />
+    <Content Include="HomeSlide\08.jpg" />
+    <Content Include="HomeSlide\09.jpg" />
+    <Content Include="HomeSlide\10.jpg" />
+    <Content Include="HomeSlide\11.jpg" />
+    <Content Include="HomeSlide\12.jpg" />
+    <Content Include="Images\ASian-TWF_Affiliation.jpg" />
+    <Content Include="Images\goi_recognistation.jpg" />
+    <Content Include="Images\Indian-Olympic.jpg" />
+    <Content Include="Images\Railway-letter-2007.jpg" />
+    <Content Include="Images\south_asian_affilaition.jpg" />
+    <Content Include="Images\TWIF-Affiliation-certificat.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="Recognitions.aspx" />
+    <Content Include="Scripts\Calendar.js" />
+    <Content Include="Scripts\docs.js" />
+    <Content Include="Scripts\gallery.js" />
+    <Content Include="Scripts\jcarousellite_1.0.1.pack.js" />
+    <Content Include="Scripts\jcarousellite_1.0.1c4.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="Scripts\jquery.ad-gallery.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.elastislide.js" />
+    <Content Include="Scripts\jquery.lightbox-0.5.min.js" />
+    <Content Include="Scripts\jquery.simplyscroll.js" />
+    <Content Include="Scripts\jquery.simplyscroll.min.js" />
+    <Content Include="Scripts\jquery.tablesorter.js" />
+    <Content Include="Scripts\jquery.tablesorter.pager.js" />
+    <Content Include="Scripts\jquery.tmpl.min.js" />
+    <Content Include="Scripts\jquery.tools.min.js" />
+    <Content Include="Scripts\slides.min.jquery.js" />
+    <Content Include="Scripts\tooltip_main.js" />
+    <Content Include="Styles\AdminStyle.css" />
+    <Content Include="Styles\Calendar.css" />
+    <Content Include="Styles\demo.css" />
+    <Content Include="Styles\elastislide.css" />
+    <Content Include="Styles\form.css" />
+    <Content Include="Styles\Grid.css" />
+    <Content Include="Styles\images\ad_next.png" />
+    <Content Include="Styles\images\ad_prev.png" />
+    <Content Include="Styles\images\ad_scroll_back.png" />
+    <Content Include="Styles\images\ad_scroll_forward.png" />
+    <Content Include="Styles\images\ajax-loader.gif" />
+    <Content Include="Styles\images\arr01.jpg" />
+    <Content Include="Styles\images\arrow-next.png" />
+    <Content Include="Styles\images\arrow-prev.png" />
+    <Content Include="Styles\images\asc.gif" />
+    <Content Include="Styles\images\background.png" />
+    <Content Include="Styles\images\bd01.jpg" />
+    <Content Include="Styles\images\bg.gif" />
+    <Content Include="Styles\images\bghding.jpg" />
+    <Content Include="Styles\images\bghding01.jpg" />
+    <Content Include="Styles\images\bghdingArrow01.png" />
+    <Content Include="Styles\images\black.png" />
+    <Content Include="Styles\images\BlankImage.png" />
+    <Content Include="Styles\images\br_next.png" />
+    <Content Include="Styles\images\br_prev.png" />
+    <Content Include="Styles\images\buttons.png" />
+    <Content Include="Styles\images\calendar_09.gif" />
+    <Content Include="Styles\images\calendar.png" />
+    <Content Include="Styles\images\desc.gif" />
+    <Content Include="Styles\images\doc-save.png" />
+    <Content Include="Styles\images\doc.png" />
+    <Content Include="Styles\images\example-frame.png" />
+    <Content Include="Styles\images\first.png" />
+    <Content Include="Styles\images\frame01.png" />
+    <Content Include="Styles\images\frame02.png" />
+    <Content Include="Styles\images\ftbg01.png" />
+    <Content Include="Styles\images\hdline.jpg" />
+    <Content Include="Styles\images\icon.png" />
+    <Content Include="Styles\images\ImageAttribution.txt" />
+    <Content Include="Styles\images\last.png" />
+    <Content Include="Styles\images\lightbox-blank.gif" />
+    <Content Include="Styles\images\lightbox-btn-close.gif" />
+    <Content Include="Styles\images\lightbox-btn-next.gif" />
+    <Content Include="Styles\images\lightbox-btn-prev.gif" />
+    <Content Include="Styles\images\lightbox-ico-loading.gif" />
+    <Content Include="Styles\images\loader.gif" />
+    <Content Include="Styles\images\loading.gif" />
+    <Content Include="Styles\images\logo.jpg" />
+    <Content Include="Styles\images\mmadan.jpg" />
+    <Content Include="Styles\images\mrKaul.jpg" />
+    <Content Include="Styles\images\nav.png" />
+    <Content Include="Styles\images\nav_thumbs.png" />
+    <Content Include="Styles\images\new-ribbon.png" />
+    <Content Include="Styles\images\News.png" />
+    <Content Include="Styles\images\next.png" />
+    <Content Include="Styles\images\opa75.png" />
+    <Content Include="Styles\images\pagination.png" />
+    <Content Include="Styles\images\pattern.png" />
+    <Content Include="Styles\images\prev.png" />
+    <Content Include="Styles\images\shanker.jpg" />
+    <Content Include="Styles\images\slide-1.jpg" />
+    <Content Include="Styles\images\slide-2.jpg" />
+    <Content Include="Styles\images\slide-3.jpg" />
+    <Content Include="Styles\images\slide-4.jpg" />
+    <Content Include="Styles\images\slide-5.jpg" />
+    <Content Include="Styles\images\slide-6.jpg" />
+    <Content Include="Styles\images\slide-7.jpg" />
+    <Content Include="Styles\images\slide.jpg" />
+    <Content Include="Styles\images\tleft.jpg" />
+    <Content Include="Styles\images\tmenu.jpg" />
+    <Content Include="Styles\images\tright.jpg" />
+    <Content Include="Styles\images\ui-bg_flat_0_0c3a72_40x100.png" />
+    <Content Include="Styles\images\ui-bg_flat_100_0c3a72_40x100.png" />
+    <Content Include="Styles\images\ui-bg_flat_45_0c3a72_40x100.png" />
+    <Content Include="Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Styles\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Styles\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\images\ui-icons_888888_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\images\views.png" />
+    <Content Include="Styles\jq.css" />
+    <Content Include="Styles\jquery-ui-1.8.18.custom.css" />
+    <Content Include="Styles\jquery.ad-gallery.css" />
+    <Content Include="Styles\jquery.lightbox-0.5.css" />
+    <Content Include="Styles\jquery.simplyscroll.css" />
+    <Content Include="Styles\jquery.tablesorter.pager.css" />
+    <Content Include="Styles\newsTicker-style.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\slider.css" />
+    <Content Include="Styles\style_Responsive.css" />
+    <Content Include="Styles\TableSorter-style.css" />
+    <Content Include="Styles\tabs-panes.css" />
+    <Content Include="Styles\tabs.css" />
+    <Content Include="Styles\user.css" />
+    <Content Include="Styles\VerticalTab.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUpdateEvent.aspx.cs">
+      <DependentUpon>AddUpdateEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUpdateEvent.aspx.designer.cs">
+      <DependentUpon>AddUpdateEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUpdateGallery.aspx.cs">
+      <DependentUpon>AddUpdateGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUpdateGallery.aspx.designer.cs">
+      <DependentUpon>AddUpdateGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUpdateHistory.aspx.cs">
+      <DependentUpon>AddUpdateHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUpdateHistory.aspx.designer.cs">
+      <DependentUpon>AddUpdateHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUpdateNews.aspx.cs">
+      <DependentUpon>AddUpdateNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUpdateNews.aspx.designer.cs">
+      <DependentUpon>AddUpdateNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUpdatePages.aspx.cs">
+      <DependentUpon>AddUpdatePages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUpdatePages.aspx.designer.cs">
+      <DependentUpon>AddUpdatePages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUpdateRecognition.aspx.cs">
+      <DependentUpon>AddUpdateRecognition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUpdateRecognition.aspx.designer.cs">
+      <DependentUpon>AddUpdateRecognition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUpdateResources.aspx.cs">
+      <DependentUpon>AddUpdateResources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUpdateResources.aspx.designer.cs">
+      <DependentUpon>AddUpdateResources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateEvent.ascx.cs">
+      <DependentUpon>UCAddUpdateEvent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateEvent.ascx.designer.cs">
+      <DependentUpon>UCAddUpdateEvent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateGallery.ascx.cs">
+      <DependentUpon>UCAddUpdateGallery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateGallery.ascx.designer.cs">
+      <DependentUpon>UCAddUpdateGallery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateHistory.ascx.cs">
+      <DependentUpon>UCAddUpdateHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateHistory.ascx.designer.cs">
+      <DependentUpon>UCAddUpdateHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateNews.ascx.cs">
+      <DependentUpon>UCAddUpdateNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateNews.ascx.designer.cs">
+      <DependentUpon>UCAddUpdateNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdatePage.ascx.cs">
+      <DependentUpon>UCAddUpdatePage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdatePage.ascx.designer.cs">
+      <DependentUpon>UCAddUpdatePage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateRecognition.ascx.cs">
+      <DependentUpon>UCAddUpdateRecognition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateRecognition.ascx.designer.cs">
+      <DependentUpon>UCAddUpdateRecognition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateResource.ascx.cs">
+      <DependentUpon>UCAddUpdateResource.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCAddUpdateResource.ascx.designer.cs">
+      <DependentUpon>UCAddUpdateResource.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCDashboard.ascx.cs">
+      <DependentUpon>UCDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCDashboard.ascx.designer.cs">
+      <DependentUpon>UCDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageEvents.ascx.cs">
+      <DependentUpon>UCManageEvents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageEvents.ascx.designer.cs">
+      <DependentUpon>UCManageEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageGalleries.ascx.cs">
+      <DependentUpon>UCManageGalleries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageGalleries.ascx.designer.cs">
+      <DependentUpon>UCManageGalleries.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageHistories.ascx.cs">
+      <DependentUpon>UCManageHistories.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageHistories.ascx.designer.cs">
+      <DependentUpon>UCManageHistories.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageNews.ascx.cs">
+      <DependentUpon>UCManageNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageNews.ascx.designer.cs">
+      <DependentUpon>UCManageNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManagePages.ascx.cs">
+      <DependentUpon>UCManagePages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManagePages.ascx.designer.cs">
+      <DependentUpon>UCManagePages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageRecognitions.ascx.cs">
+      <DependentUpon>UCManageRecognitions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageRecognitions.ascx.designer.cs">
+      <DependentUpon>UCManageRecognitions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageResources.ascx.cs">
+      <DependentUpon>UCManageResources.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageResources.ascx.designer.cs">
+      <DependentUpon>UCManageResources.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageTextPage.ascx.cs">
+      <DependentUpon>UCManageTextPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCManageTextPage.ascx.designer.cs">
+      <DependentUpon>UCManageTextPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCSelectResources.ascx.cs">
+      <DependentUpon>UCSelectResources.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCSelectResources.ascx.designer.cs">
+      <DependentUpon>UCSelectResources.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCShowResources.ascx.cs">
+      <DependentUpon>UCShowResources.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCShowResources.ascx.designer.cs">
+      <DependentUpon>UCShowResources.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewEvent.ascx.cs">
+      <DependentUpon>UCViewEvent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewEvent.ascx.designer.cs">
+      <DependentUpon>UCViewEvent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewGallery.ascx.cs">
+      <DependentUpon>UCViewGallery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewGallery.ascx.designer.cs">
+      <DependentUpon>UCViewGallery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewHistory.ascx.cs">
+      <DependentUpon>UCViewHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewHistory.ascx.designer.cs">
+      <DependentUpon>UCViewHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewNews.ascx.cs">
+      <DependentUpon>UCViewNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewNews.ascx.designer.cs">
+      <DependentUpon>UCViewNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewPage.ascx.cs">
+      <DependentUpon>UCViewPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewPage.ascx.designer.cs">
+      <DependentUpon>UCViewPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewRecognition.ascx.cs">
+      <DependentUpon>UCViewRecognition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewRecognition.ascx.designer.cs">
+      <DependentUpon>UCViewRecognition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewResource.ascx.cs">
+      <DependentUpon>UCViewResource.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\UCViewResource.ascx.designer.cs">
+      <DependentUpon>UCViewResource.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageEvents.aspx.cs">
+      <DependentUpon>ManageEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageEvents.aspx.designer.cs">
+      <DependentUpon>ManageEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageGalleries.aspx.cs">
+      <DependentUpon>ManageGalleries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageGalleries.aspx.designer.cs">
+      <DependentUpon>ManageGalleries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageHistories.aspx.cs">
+      <DependentUpon>ManageHistories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageHistories.aspx.designer.cs">
+      <DependentUpon>ManageHistories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageNews.aspx.cs">
+      <DependentUpon>ManageNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageNews.aspx.designer.cs">
+      <DependentUpon>ManageNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagePages.aspx.cs">
+      <DependentUpon>ManagePages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManagePages.aspx.designer.cs">
+      <DependentUpon>ManagePages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageRecognition.aspx.cs">
+      <DependentUpon>ManageRecognition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageRecognition.aspx.designer.cs">
+      <DependentUpon>ManageRecognition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageResources.aspx.cs">
+      <DependentUpon>ManageResources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageResources.aspx.designer.cs">
+      <DependentUpon>ManageResources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Masters\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Masters\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Masters\General.Master.cs">
+      <DependentUpon>General.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Masters\General.Master.designer.cs">
+      <DependentUpon>General.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShowMessage.aspx.cs">
+      <DependentUpon>ShowMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShowMessage.aspx.designer.cs">
+      <DependentUpon>ShowMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewEvent.aspx.cs">
+      <DependentUpon>ViewEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewEvent.aspx.designer.cs">
+      <DependentUpon>ViewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewGallery.aspx.cs">
+      <DependentUpon>ViewGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewGallery.aspx.designer.cs">
+      <DependentUpon>ViewGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewHistory.aspx.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewHistory.aspx.designer.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewNews.aspx.cs">
+      <DependentUpon>ViewNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewNews.aspx.designer.cs">
+      <DependentUpon>ViewNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewPages.aspx.cs">
+      <DependentUpon>ViewPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewPages.aspx.designer.cs">
+      <DependentUpon>ViewPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewRecognition.aspx.cs">
+      <DependentUpon>ViewRecognition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewRecognition.aspx.designer.cs">
+      <DependentUpon>ViewRecognition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewResource.aspx.cs">
+      <DependentUpon>ViewResource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewResource.aspx.designer.cs">
+      <DependentUpon>ViewResource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\BAL\BaseManager.cs" />
+    <Compile Include="Code\BAL\EventManager.cs" />
+    <Compile Include="Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\BO\BaseBO.cs" />
+    <Compile Include="Code\BO\Event.cs" />
+    <Compile Include="Code\BO\History.cs" />
+    <Compile Include="Code\BO\TextPage.cs" />
+    <Compile Include="Code\BO\News.cs" />
+    <Compile Include="Code\BO\Gallery.cs" />
+    <Compile Include="Code\BO\Recognition.cs" />
+    <Compile Include="Code\BO\User.cs" />
+    <Compile Include="Code\DAL\MSSQLHandler.cs" />
+    <Compile Include="Code\Helper.cs" />
+    <Compile Include="Code\BAL\HistoryManager.cs" />
+    <Compile Include="Code\BAL\MasterManager.cs" />
+    <Compile Include="Code\BAL\Membership.cs" />
+    <Compile Include="Code\BAL\NewsManager.cs" />
+    <Compile Include="Code\BAL\PagesManager.cs" />
+    <Compile Include="Code\BAL\GalleryManager.cs" />
+    <Compile Include="Code\BAL\RecognitionManager.cs" />
+    <Compile Include="Code\Presentation.cs" />
+    <Compile Include="Controls\UCEventList.ascx.cs">
+      <DependentUpon>UCEventList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCEventList.ascx.designer.cs">
+      <DependentUpon>UCEventList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCGalleries.ascx.cs">
+      <DependentUpon>UCGalleries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCGalleries.ascx.designer.cs">
+      <DependentUpon>UCGalleries.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCHistory.ascx.cs">
+      <DependentUpon>UCHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCHistory.ascx.designer.cs">
+      <DependentUpon>UCHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCHomeBanner.ascx.cs">
+      <DependentUpon>UCHomeBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCHomeBanner.ascx.designer.cs">
+      <DependentUpon>UCHomeBanner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HomeContent.ascx.cs">
+      <DependentUpon>HomeContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\HomeContent.ascx.designer.cs">
+      <DependentUpon>HomeContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCNewsTicker.ascx.cs">
+      <DependentUpon>UCNewsTicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCNewsTicker.ascx.designer.cs">
+      <DependentUpon>UCNewsTicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCRecognitions.ascx.cs">
+      <DependentUpon>UCRecognitions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCRecognitions.ascx.designer.cs">
+      <DependentUpon>UCRecognitions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCRulesTicker.ascx.cs">
+      <DependentUpon>UCRulesTicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCRulesTicker.ascx.designer.cs">
+      <DependentUpon>UCRulesTicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShowPage.ascx.cs">
+      <DependentUpon>ShowPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowPage.ascx.designer.cs">
+      <DependentUpon>ShowPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCLogin.ascx.cs">
+      <DependentUpon>UCLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCLogin.ascx.designer.cs">
+      <DependentUpon>UCLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCManageResources.ascx.cs">
+      <DependentUpon>UCManageResources.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCManageResources.ascx.designer.cs">
+      <DependentUpon>UCManageResources.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCMessage.ascx.cs">
+      <DependentUpon>UCMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCMessage.ascx.designer.cs">
+      <DependentUpon>UCMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCShowList.ascx.cs">
+      <DependentUpon>UCShowList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCShowList.ascx.designer.cs">
+      <DependentUpon>UCShowList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCCustomPaging.ascx.cs">
+      <DependentUpon>UCCustomPaging.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UCCustomPaging.ascx.designer.cs">
+      <DependentUpon>UCCustomPaging.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galleries.aspx.cs">
+      <DependentUpon>Galleries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galleries.aspx.designer.cs">
+      <DependentUpon>Galleries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Histories.aspx.cs">
+      <DependentUpon>Histories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Histories.aspx.designer.cs">
+      <DependentUpon>Histories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recognitions.aspx.cs">
+      <DependentUpon>Recognitions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recognitions.aspx.designer.cs">
+      <DependentUpon>Recognitions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CacheKeys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CacheKeys.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ConfigurationKeys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfigurationKeys.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PagePath.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PagePath.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\QueryStringKeys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QueryStringKeys.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Roles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Roles.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SessionKeys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SessionKeys.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Masters\General.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Masters\Admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resources\CacheKeys.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CacheKeys.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ConfigurationKeys.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfigurationKeys.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PagePath.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PagePath.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\QueryStringKeys.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>QueryStringKeys.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Roles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Roles.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SessionKeys.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SessionKeys.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Masters\User.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rules\Appilication form affiliation-2 .pdf" />
+    <None Include="Rules\injuriesTwifMedicalReport.pdf" />
+    <None Include="Rules\TugOfWarRulesBook1902.pdf" />
+    <None Include="Rules\TWFI Entry form-2008 final 29-5-2008.pdf" />
+    <None Include="Rules\TwifInternationalRules-2008.pdf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1247</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

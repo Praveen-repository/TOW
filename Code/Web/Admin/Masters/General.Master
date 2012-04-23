@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="General.master.cs" Inherits="Web.Admin.Masters.General" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TOW Administrator</title>
+    <link href="/Styles/AdminStyle.css" type="text/css" rel="Stylesheet" rev="Stylesheet" />
+    <link href="/Styles/form.css" type="text/css" rel="Stylesheet" rev="Stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="cnt">
+        <div class="contBody">
+            <div class="adminBann">
+                Welcome Administrator</div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        &nbsp;</li>
+                </ul>
+            </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+          </div>
+        <div class="footer">
+            <ul>
+                <li>
+               &nbsp;</li>
+               
+            </ul>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
